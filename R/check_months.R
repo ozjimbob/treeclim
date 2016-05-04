@@ -38,7 +38,7 @@ check_months <- function(selection) {
     } else {
       out$minmonth <- min(.months)
     }
-    if (!any(.months < -12) & !any(.months > 12)) {
+    if (!any(.months < -24) & !any(.months > 24)) {
       out$check <- TRUE
     } else {
       out$check <- FALSE
